@@ -15,5 +15,11 @@ class Cal:
 		return x/y
 
 cal=Cal()
-print(cal.add(20,30))
-print(cal.mul(5,7))
+print("Enter the value of 'A' and 'B'");
+a=int(raw_input());
+b=int(raw_input());
+print(str(a)+"+"+str(b)+"="+str(cal.add(a,b)));
+print(str(a)+"-"+str(b)+"="+str(cal.sub(a,b)));
+
+print(str(a)+"*"+str(b)+"="+str(cal.mul(a,b)));
+print(str(a)+"/"+str(b)+"="+str(cal.div(a,b)));
